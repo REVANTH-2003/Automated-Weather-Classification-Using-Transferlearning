@@ -33,13 +33,13 @@ Choose a upload option and upload a Weather_Classification file in the project t
 Open the uploaded file and run the each cell in the file. It save the model in your google drive. 
 Download the model named model.h5 and paste the model in the Weather classification folder parllel to app.py file  
 
-# Step 3 :
+# Step 5 :
 
 Go to the requirements.txt file location. Go to command prompt and run the following command to install the required packages.
 
 pip install -r requirements.txt
 
-# Step 3 :
+# Step 6 :
 
 Run the app.py file and copy the url and paste it in browser.
 
