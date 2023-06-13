@@ -1,0 +1,182 @@
+.navbar-brand {
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('wether.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#img1:hover {
+    background-color: rgb(13, 110, 253);
+    rotate: y ;
+}
+
+
+#imgnam {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#hed {
+    
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+#hr {
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 0 15px;
+    border: 2px solid white;
+}
+
+.container .box {
+    width: 300px;
+    height: 175px;
+    background: #000;
+    margin: 25px 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+    float: left;
+    position: relative;
+}
+
+.container .box:before,
+.container .box:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box:before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scaleX(0);
+}
+
+.container .box:hover:before {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.container .box:after {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: scaleY(0);
+}
+
+.container .box:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.container .box .imgBox {
+    position: relative;
+}
+
+.container .box .imgBox img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container .box:hover .imgBox img {
+    opacity: .2;
+    transform: scale(1.2);
+}
+
+.container .box .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container .box .content h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .box .content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .box:hover .content h2,
+.container .box:hover .content p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+@media (max-width: 767px) {
+    .container .box {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .container .box {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+.footer {
+    background-color: white;
+    
+}
+
+#footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}

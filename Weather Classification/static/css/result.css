@@ -1,0 +1,48 @@
+.navbar-brand {
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('wether.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#hr1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.footer {
+    background-color: white;   
+}
+
+#footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
